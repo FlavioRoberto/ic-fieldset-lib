@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ic-fieldset": [
+        "dist/ic-fieldset"
+      ],
+      "ic-fieldset/*": [
+        "dist/ic-fieldset/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
