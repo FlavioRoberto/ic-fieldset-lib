@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ic-fieldset": {
+    "tc-fieldset": {
       "projectType": "library",
-      "root": "projects/ic-fieldset",
-      "sourceRoot": "projects/ic-fieldset/src",
+      "root": "projects/tc-fieldset",
+      "sourceRoot": "projects/tc-fieldset/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ic-fieldset/tsconfig.lib.json",
-            "project": "projects/ic-fieldset/ng-package.json"
+            "tsConfig": "projects/tc-fieldset/tsconfig.lib.json",
+            "project": "projects/tc-fieldset/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ic-fieldset/src/test.ts",
-            "tsConfig": "projects/ic-fieldset/tsconfig.spec.json",
-            "karmaConfig": "projects/ic-fieldset/karma.conf.js"
+            "main": "projects/tc-fieldset/src/test.ts",
+            "tsConfig": "projects/tc-fieldset/tsconfig.spec.json",
+            "karmaConfig": "projects/tc-fieldset/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ic-fieldset/tsconfig.lib.json",
-              "projects/ic-fieldset/tsconfig.spec.json"
+              "projects/tc-fieldset/tsconfig.lib.json",
+              "projects/tc-fieldset/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -38,32 +38,32 @@
         }
       }
     },
-    "ic-fieldset-teste": {
+    "tc-fieldset-teste": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/ic-fieldset-teste",
-      "sourceRoot": "projects/ic-fieldset-teste/src",
+      "root": "projects/tc-fieldset-teste",
+      "sourceRoot": "projects/tc-fieldset-teste/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ic-fieldset-teste",
-            "index": "projects/ic-fieldset-teste/src/index.html",
-            "main": "projects/ic-fieldset-teste/src/main.ts",
-            "polyfills": "projects/ic-fieldset-teste/src/polyfills.ts",
-            "tsConfig": "projects/ic-fieldset-teste/tsconfig.app.json",
+            "outputPath": "dist/tc-fieldset-teste",
+            "index": "projects/tc-fieldset-teste/src/index.html",
+            "main": "projects/tc-fieldset-teste/src/main.ts",
+            "polyfills": "projects/tc-fieldset-teste/src/polyfills.ts",
+            "tsConfig": "projects/tc-fieldset-teste/tsconfig.app.json",
             "aot": false,
             "assets": [
-              "projects/ic-fieldset-teste/src/favicon.ico",
-              "projects/ic-fieldset-teste/src/assets"
+              "projects/tc-fieldset-teste/src/favicon.ico",
+              "projects/tc-fieldset-teste/src/assets"
             ],
             "styles": [
-              "projects/ic-fieldset-teste/src/styles.scss"
+              "projects/tc-fieldset-teste/src/styles.scss"
             ],
             "scripts": []
           },
@@ -71,8 +71,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/ic-fieldset-teste/src/environments/environment.ts",
-                  "with": "projects/ic-fieldset-teste/src/environments/environment.prod.ts"
+                  "replace": "projects/tc-fieldset-teste/src/environments/environment.ts",
+                  "with": "projects/tc-fieldset-teste/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -102,33 +102,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ic-fieldset-teste:build"
+            "browserTarget": "tc-fieldset-teste:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ic-fieldset-teste:build:production"
+              "browserTarget": "tc-fieldset-teste:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ic-fieldset-teste:build"
+            "browserTarget": "tc-fieldset-teste:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ic-fieldset-teste/src/test.ts",
-            "polyfills": "projects/ic-fieldset-teste/src/polyfills.ts",
-            "tsConfig": "projects/ic-fieldset-teste/tsconfig.spec.json",
-            "karmaConfig": "projects/ic-fieldset-teste/karma.conf.js",
+            "main": "projects/tc-fieldset-teste/src/test.ts",
+            "polyfills": "projects/tc-fieldset-teste/src/polyfills.ts",
+            "tsConfig": "projects/tc-fieldset-teste/tsconfig.spec.json",
+            "karmaConfig": "projects/tc-fieldset-teste/karma.conf.js",
             "assets": [
-              "projects/ic-fieldset-teste/src/favicon.ico",
-              "projects/ic-fieldset-teste/src/assets"
+              "projects/tc-fieldset-teste/src/favicon.ico",
+              "projects/tc-fieldset-teste/src/assets"
             ],
             "styles": [
-              "projects/ic-fieldset-teste/src/styles.scss"
+              "projects/tc-fieldset-teste/src/styles.scss"
             ],
             "scripts": []
           }
@@ -137,9 +137,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ic-fieldset-teste/tsconfig.app.json",
-              "projects/ic-fieldset-teste/tsconfig.spec.json",
-              "projects/ic-fieldset-teste/e2e/tsconfig.json"
+              "projects/tc-fieldset-teste/tsconfig.app.json",
+              "projects/tc-fieldset-teste/tsconfig.spec.json",
+              "projects/tc-fieldset-teste/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -149,16 +149,16 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/ic-fieldset-teste/e2e/protractor.conf.js",
-            "devServerTarget": "ic-fieldset-teste:serve"
+            "protractorConfig": "projects/tc-fieldset-teste/e2e/protractor.conf.js",
+            "devServerTarget": "tc-fieldset-teste:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ic-fieldset-teste:serve:production"
+              "devServerTarget": "tc-fieldset-teste:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ic-fieldset"
+  "defaultProject": "tc-fieldset"
 }

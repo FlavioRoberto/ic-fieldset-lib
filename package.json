@@ -1,5 +1,5 @@
 {
-  "name": "ic-fieldset",
+  "name": "tc-fieldset",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "librarybuild": "ng build ic-fieldset && cd dist/ic-fieldset"
+    "librarybuild": "ng build tc-fieldset"
   },
   "private": true,
   "dependencies": {

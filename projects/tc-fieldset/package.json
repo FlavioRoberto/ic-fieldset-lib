@@ -1,5 +1,5 @@
 {
-  "name": "@try_catch_vazio/ic-fieldset",
+  "name": "@trycatchvazio/tc-fieldset",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.2.11",

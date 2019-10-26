@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ic-fieldset": [
-        "dist/ic-fieldset"
+      "tc-fieldset": [
+        "dist/tc-fieldset"
       ],
-      "ic-fieldset/*": [
-        "dist/ic-fieldset/*"
+      "tc-fieldset/*": [
+        "dist/tc-fieldset/*"
       ]
     }
   },

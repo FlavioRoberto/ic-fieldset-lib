@@ -2,10 +2,10 @@ import { Component, Input, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'tc-fieldset',
-  templateUrl: './view/ic-fieldset.component.html',
-  styleUrls: ['./view/ic-fieldset.component.scss']
+  templateUrl: './view/tc-fieldset.component.html',
+  styleUrls: ['./view/tc-fieldset.component.scss']
 })
-export class IcFieldsetComponent implements AfterViewInit {
+export class TcFieldsetComponent implements AfterViewInit {
   @Input() label: string;
   comFoco: boolean;
 

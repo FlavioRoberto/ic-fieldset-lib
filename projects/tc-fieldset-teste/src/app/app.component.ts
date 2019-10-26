@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ic-fieldset-teste';
+  title = 'tc-fieldset-teste';
 }
