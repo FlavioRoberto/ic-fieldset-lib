@@ -1,7 +1,7 @@
 import { Component, Input, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-ic-fieldset',
+  selector: 'tc-fieldset',
   templateUrl: './view/ic-fieldset.component.html',
   styleUrls: ['./view/ic-fieldset.component.scss']
 })

@@ -1,5 +1,5 @@
 {
-  "name": "@breaking_dev/ic-fieldset",
+  "name": "@try_catch_vazio/ic-fieldset",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.2.11",
